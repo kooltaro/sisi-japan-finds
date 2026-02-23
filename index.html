@@ -49,16 +49,13 @@
 .hero *{
   box-sizing: border-box;
 } 
-  /* mobile side padding fix */
-.wrap{
-  padding-left:16px;
-  padding-right:16px;
+  /* ==== Mobile hero text only ==== */
+@media (max-width: 600px){
+  header.hero .hero-inner{
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
 }
-
-.hero-inner{
-  padding-left:16px;
-  padding-right:16px;
-}  
   </style>
 </head>
 
