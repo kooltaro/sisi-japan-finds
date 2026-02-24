@@ -113,10 +113,10 @@
 }
     /* CTA 横並び＆崩れ防止 */
 .cta{
-  display: flex;
-  gap: 14px;
-  align-items: center;
-  flex-wrap: wrap;
+  display:flex;
+  gap:16px;
+  align-items:center;
+  flex-wrap:wrap;
 }
 
 /* 右ボタン（薄い/透明っぽい） */
@@ -132,6 +132,23 @@
   border-color: transparent;
   background: rgba(255,92,168,.85);
 }
+/* ===== Button base (共通の形) ===== */
+.btn{
+  display:inline-block;
+  padding:14px 28px;
+  border-radius:30px;
+  font-weight:600;
+  text-decoration:none;
+  line-height:1;
+  white-space:nowrap;
+}
+
+/* 右ボタン(ghost)も形を確実に */
+.btn.ghost{
+  display:inline-block;
+  padding:14px 28px;
+  border-radius:30px;
+}    
   </style>
 </head>
 
@@ -168,14 +185,14 @@
     Message Sisi Japan Finds
   </a>
 
-  <a class="btn ghost neon-hover" href="#how">
+  <a class="btn ghost neon-hover" href="#how-it-works">How to Order</a>
     How to Order
   </a>
 </div>
 
 <p class="sub">Order in 4 Simple Steps</p>
 <p class="note">Tip: Send screenshot + quantity + your city for the fastest quote.</p>
-✅ そしてCSSも追加（まだなら）
+
 </header>
 
 <header>
