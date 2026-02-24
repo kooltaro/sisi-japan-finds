@@ -111,6 +111,27 @@
     padding-right: 20px !important;
   }
 }
+    /* CTA 横並び＆崩れ防止 */
+.cta{
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* 右ボタン（薄い/透明っぽい） */
+.btn.ghost{
+  background: transparent;
+  border: 2px solid rgba(244,143,177,.55);
+  color: #333;
+}
+
+/* 右ボタンのホバー時、文字も少し白寄りに */
+.btn.ghost:hover{
+  color:#fff;
+  border-color: transparent;
+  background: rgba(255,92,168,.85);
+}
   </style>
 </head>
 
