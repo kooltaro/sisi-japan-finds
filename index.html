@@ -471,7 +471,41 @@
   max-width:320px;
   text-align:center;
 } 
-    
+  /* ===== FIX: mobile page centered ===== */
+@media (max-width: 900px){
+  body{
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  header.hero, main, .grid, .card{
+    width: 100%;
+  }
+
+  .hero-inner{
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .hero-text{
+    text-align: center;
+  }
+
+  .cta{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    align-items:center;
+    justify-content:center;
+    margin-top:16px;
+  }
+
+  .btn{
+    width:100%;
+    max-width:320px;
+    text-align:center;
+  }
+}  
   </style>
 </head>
 
