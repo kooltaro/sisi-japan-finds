@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Sisi Japan Finds ❤️ | Authentic Japanese Goodies & Essentials</title>
-  <meta name="description" content="Sisi Japan Finds ❤️ - Authentic Japanese goodies & everyday essentials. Japan thrift proxy service to the Philippines." />
+  <title>Sisi Japan Finds 💗 | Authentic Japanese Finds & Essentials</title>
+  <meta name="description" content="Sisi Japan Finds - Japan Pasabuy & Proxy Service delivered to the Philippines." />
+
   <style>
     :root{
       --pink:#F48FB1;
@@ -13,511 +14,180 @@
       --text:#333;
       --max:920px;
     }
-    .sub{
-  font-size:14px;
-  color:#888;
-  margin-top:-6px;
-  margin-bottom:12px;
-}
-    /* ===== Neon Pink Hover Button ===== */
 
-.neon-hover{
-  position: relative;
-  display: inline-block;
-  padding: 14px 28px;
-  background: var(--pink);
-  color: #fff;
-  font-weight: 600;
-  border-radius: 30px;
-  text-decoration: none;
-  z-index: 1;
-  overflow: hidden;
-  transition: 0.3s;
-}
-
-.neon-hover::before{
-  content: "";
-  position: absolute;
-  inset: -6px;
-  border-radius: 36px;
-  background: linear-gradient(45deg,
-    #ff2d95,
-    #ff6ec7,
-    #ff9edb,
-    #ff2d95
-  );
-  background-size: 300%;
-  filter: blur(12px);
-  z-index: -1;
-
-  opacity: 0;
-  transition: opacity .3s;
-  animation: neonPink 6s linear infinite;
-}
-
-.neon-hover:hover::before{
-  opacity: .85;
-}
-
-.neon-hover:active::before{
-  opacity: .85;
-}
-
-@keyframes neonPink{
-  0%{ background-position: 0% 50%; }
-  50%{ background-position: 100% 50%; }
-  100%{ background-position: 0% 50%; }
-}
-    body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial;line-height:1.6;background:#fafafa;color:var(--text);}
-    .wrap{
-  width:100%;
-  max-width:var(--max);
-  margin:0 auto;
-  padding:0 18px;
-}
-    header{background:var(--bg);}
-    .hero{position:relative;}
-    /*
-    .hero img{width:100%;max-height:620px;object-fit:cover;display:block;}
-    .hero .badge{
-      position:absolute;left:0;right:0;bottom:26px;
-      margin:0 auto;max-width:var(--max);
-      padding:14px 16px;text-align:center;
-      background:rgba(244,143,177,.86);
-      color:#fff;border-radius:16px;
-      box-shadow:0 6px 24px rgba(0,0,0,.12);
+    *{ box-sizing:border-box; }
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial;
+      line-height:1.6;
+      background:#fafafa;
+      color:var(--text);
     }
-    */
-    /*
-    .hero h1{margin:0;font-size:30px;letter-spacing:2px;}
-    .hero p{margin:6px 0 0;font-size:14px;opacity:.95;}
-    */
-    main{padding:22px 0 50px;}
-    .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:16px;margin:14px 0;box-shadow:0 2px 12px rgba(0,0,0,.04);}
-    h2{font-size:18px;margin:0 0 10px;}
-    .cta{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:10px;
-  justify-content:center;
-  align-items:center;
-}
-    .btn{display:inline-block;text-decoration:none;background:var(--pink2);color:#fff;padding:12px 14px;border-radius:12px;font-weight:700;}
-    .btn.alt{background:#fff;color:var(--pink2);border:2px solid var(--pink2);}
-    .grid{display:grid;gap:12px;grid-template-columns:1fr;}
-    @media(min-width:860px){.grid{grid-template-columns:1fr 1fr;}}
-    table{width:100%;border-collapse:collapse;font-size:14px;}
-    th,td{padding:10px;border-bottom:1px solid #eee;text-align:left;}
-    th{background:#fafafa;}
-    .note{font-size:12px;color:#666;margin-top:8px;}
-    code{background:#f4f4f4;padding:2px 6px;border-radius:8px;}
-    footer{border-top:1px solid #eee;padding:18px 0;color:#777;font-size:12px;}
+    header{ background:var(--bg); }
+
+    /* Page container (IMPORTANT: ここで中央寄せ。bodyにmax-widthはかけない) */
+    .wrap{
+      width:100%;
+      max-width:var(--max);
+      margin:0 auto;
+      padding:0 18px;
+    }
+
+    /* ===== Hero layout ===== */
+    .hero{ padding:24px 0 18px; }
     .hero-inner{
-  padding: 0 20px;
-}
-  
-.hero *{
-  box-sizing: border-box;
-} 
-  /* ==== Mobile hero text only ==== */
-@media (max-width: 600px){
-  header.hero .hero-inner{
-    padding-left: 20px !important;
-    padding-right: 20px !important;
-  }
-}
-    /* CTA 横並び＆崩れ防止 */
-.cta{
-  display:flex;
-  gap:16px;
-  align-items:center;
-  flex-wrap:wrap;
-}
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      align-items:center;
+      text-align:center;
+    }
 
-/* 右ボタン（薄い/透明っぽい） */
-.btn.ghost{
-  background: transparent;
-  border: 2px solid rgba(244,143,177,.55);
-  color: #333;
-}
-/* ===== うっすら常時ネオン ===== */
+    /* Logo */
+    .brand-logo{
+      width:min(520px, 92vw);
+      height:auto;
+      display:block;
+      margin:6px auto 4px;
+    }
+    .brand-tagline{
+      margin:6px 0 4px;
+      font-size:14px;
+      color:#777;
+      letter-spacing:.2px;
+    }
 
-.btn.ghost.neon-hover::before{
-  opacity: .25;   /* ← 普段うっすら光る */
-}
+    /* Title */
+    .hero-title{
+      margin:0;
+      font-size:34px;
+      line-height:1.15;
+      letter-spacing:.2px;
+    }
+    .hero-sub{
+      margin:10px 0 0;
+      font-size:15px;
+      opacity:.92;
+    }
 
-.btn.ghost.neon-hover:hover::before,
-.btn.ghost.neon-hover:active::before{
-  opacity: .85;   /* ← 触ると強く */
-}
-/* 右ボタンのホバー時、文字も少し白寄りに */
-.btn.ghost:hover{
-  color:#fff;
-  border-color: transparent;
-  background: rgba(255,92,168,.85);
-}
-/* ===== Button base (共通の形) ===== */
-.btn{
-  display:inline-block;
-  padding:14px 28px;
-  border-radius:30px;
-  font-weight:600;
-  text-decoration:none;
-  line-height:1;
-  white-space:nowrap;
-}
+    /* Photo */
+    .hero-photo{
+      width:100%;
+      max-width:520px;
+    }
+    .hero-photo img{
+      width:100%;
+      height:auto;
+      display:block;
+      border-radius:20px;
+      box-shadow:0 20px 60px rgba(0,0,0,.15);
+    }
 
-/* 右ボタン(ghost)も形を確実に */
-.btn.ghost{
-  display:inline-block;
-  padding:14px 28px;
-  border-radius:30px;
-}
-    .btn-sub{
-  display:block;
-  font-size:12px;
-  font-weight:400;
-  opacity:.8;
-  margin-top:4px;
-}
-    .btn-sub{
-  font-size:11px;
-  opacity:.7;
-  letter-spacing:.5px;
-}
-  /* ===== Hero Typography Polish ===== */
+    /* Trust row */
+    .trust{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 16px;
+      justify-content:center;
+      align-items:center;
+      margin-top:10px;
+      font-size:14px;
+      color:#444;
+    }
+    .trust span{ white-space:nowrap; }
 
-.hero-title{
-  color:#2f2f2f;
-  font-weight:700;
-  letter-spacing:-0.02em;
-  line-height:1.08;
-  margin-top:8px;
-}
-
-.hero-title .hero-line{
-  display:block;
-  margin-top:12px;
-  font-size: clamp(16px, 3.8vw, 22px);
-  font-weight:600;
-  color:#555;
-}
-
-/* 上の小さいテキスト */
-.brand-tagline{
-  color:#666;
-  font-size:14px;
-  margin-bottom:8px;
-}
-
-/* 下の説明文 */
-.hero-sub{
-  color:#444;
-  line-height:1.6;
-}  
- .hero-title{
-  line-height:1.15;   /* 少しゆとり */
-}
-
-.hero-title .hero-line{
-  margin-top:16px;    /* サブラインを少し下げる */
-}
- .hero-title{
-  font-weight:600;
-}
- .btn.two-line .btn-sub{
-  font-size:11px;
-  opacity:.65;
-}
-  .hero-title{
-  font-weight:600;   /* 700→600に */
-  line-height:1.18;  /* 少しゆるめる */
-} 
-  .hero-title .hero-line{
-  margin-top:18px;
-}
- .btn.two-line .btn-sub{
-  opacity:.6;   /* 少し弱める */
-}
-  /* ===== Center Layout Test ===== */
-
-.hero{
-  text-align:center;
-}
-
-.hero-title{
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.hero-sub{
-  max-width: 600px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.trust{
-  justify-content:center;
-}
-
-.cta{
-  justify-content:center;
-}
- /* ===== Custom Hero Layout ===== */
-
-.custom-hero{
-  text-align:center;
-  line-height:1.1;
-}
-
-.custom-hero span{
-  display:block;
-}
-
-/* メイン強調 */
-.line1,
-.line3,
-.line5{
-  font-size: clamp(30px, 7vw, 48px);
-  font-weight:700;
-  color:#2f2f2f;
-}
-
-/* 小さく軽く */
-.line2,
-.line4{
-  font-size: clamp(16px, 4vw, 22px);
-  font-weight:500;
-  color:#666;
-  margin:8px 0;
-}
-
-/* Philippines 少し強め */
-.line5{
-  margin-top:8px;
-} 
- .line2{
-  font-style:italic;
-  opacity:.6;
-} 
- .line5{
-  letter-spacing:1px;
-}
-  .line2{
-  letter-spacing:2px;
-}
-  .hero-sub{
-  max-width:520px;
-  margin:0 auto;
-}  
-  /* ===== PC表示調整 ===== */
-@media (min-width: 900px){
-
-  .hero-inner{
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .hero-title{
-    font-size: 56px;
-    line-height: 1.2;
-  }
-
-  .hero-sub{
-    font-size: 18px;
-    max-width: 600px;
-    margin: 20px auto 30px;
-  }
-
-  .cta{
-    margin-top: 30px;
-  }
-
-  .btn{
-    font-size: 16px;
-    padding: 16px 34px;
-  }
-
-}
-  /* ===== PC 2カラム ===== */
-@media (min-width: 900px){
-
-  .hero-inner{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
-    max-width:1100px;
-    margin:0 auto;
-    padding:60px 20px;
-  }
-
-  .hero-text{
-    flex:1;
-    text-align:left;
-  }
-
-  .hero-image{
-    flex:1;
-    text-align:right;
-  }
-
-  .hero-image img{
-    max-width:100%;
-    border-radius:20px;
-  }
-
-}
-    .hero-image img{
-  box-shadow:0 20px 60px rgba(0,0,0,0.15);
-}
-    /* ===== hero layout (new) ===== */
-.hero-inner{
-  display:flex;
-  flex-direction:column;
-  gap:22px;
-  padding:28px 18px;
-  max-width:1100px;
-  margin:0 auto;
-}
-
-.hero-text{ text-align:center; }
-
-.hero-image img{
-  width:100%;
-  max-width:520px;
-  height:auto;
-  border-radius:18px;
-  display:block;
-  margin:0 auto;
-}
-
-.trust{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px 14px;
-  justify-content:center;
-  margin:14px 0 18px;
-}
-
-.cta{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-  align-items:center;
-  justify-content:center;
-}
-
-/* PCだけ2カラム */
-@media (min-width: 900px){
-  .hero-inner{
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
-    padding:60px 20px;
-  }
-  .hero-text{ flex:1; text-align:left; }
-  .trust{ justify-content:flex-start; }
-  .cta{ align-items:flex-start; }
-  .hero-image{ flex:1; text-align:right; }
-  .hero-image img{ margin:0; }
-}
+    /* ===== CTA Buttons (single source of truth) ===== */
     .cta{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:10px;
-  justify-content:center;
-  align-items:center;
-}
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+      align-items:center;
+      justify-content:center;
+      margin-top:14px;
+      width:100%;
+    }
+    .btn{
+      display:block;
+      text-decoration:none;
+      background:var(--pink2);
+      color:#fff;
+      padding:12px 14px;
+      border-radius:14px;
+      font-weight:700;
+      text-align:center;
+      width:100%;
+      max-width:320px; /* スマホで揃える */
+      box-shadow:0 10px 30px rgba(255,111,174,.25);
+    }
+    .btn-sub{
+      display:block;
+      font-weight:600;
+      opacity:.85;
+      font-size:12px;
+      margin-top:2px;
+    }
+    .btn.alt{
+      background:#fff;
+      color:var(--pink2);
+      border:2px solid rgba(255,111,174,.55);
+      box-shadow:none;
+    }
 
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  background:var(--pink2);
-  color:#fff;
-  padding:12px 14px;
-  border-radius:12px;
-  font-weight:700;
-  min-width:240px;
-  text-align:center;
-}
+    /* ===== Main cards ===== */
+    main{ padding:22px 0 50px; }
+    .grid{
+      display:grid;
+      gap:12px;
+      grid-template-columns:1fr;
+    }
+    .card{
+      background:#fff;
+      border:1px solid #eee;
+      border-radius:16px;
+      padding:16px;
+      box-shadow:0 2px 12px rgba(0,0,0,.04);
+    }
+    h2{ font-size:18px; margin:0 0 10px; }
+    .sub{ font-size:14px; color:#888; margin:-6px 0 12px; }
+    .note{ font-size:12px; color:#666; margin-top:8px; }
 
-.btn.alt{
-  background:#fff;
-  color:var(--pink2);
-  border:2px solid var(--pink2);
-}
-  /* ===== Mobile default (1 column, centered) ===== */
-.hero-inner{
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
+    table{ width:100%; border-collapse:collapse; font-size:14px; }
+    th,td{ padding:10px; border-bottom:1px solid #eee; text-align:left; }
+    th{ background:#fafafa; }
 
-.cta{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  align-items:center;
-  justify-content:center;
-  margin-top:16px;
-}
+    footer{
+      border-top:1px solid #eee;
+      padding:18px 0;
+      color:#777;
+      font-size:12px;
+      text-align:center;
+      background:#fff;
+    }
 
-.btn{
-  width:100%;
-  max-width:320px;
-  text-align:center;
-} 
-  /* ===== FIX: mobile page centered ===== */
-@media (max-width: 900px){
-  body{
-    max-width: none;
-    margin: 0 auto;
-  }
-
-  header.hero, main, .grid, .card{
-    width: 100%;
-  }
-
-  .hero-inner{
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-
-  .hero-text{
-    text-align: center;
-  }
-
-  .cta{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    align-items:center;
-    justify-content:center;
-    margin-top:16px;
-  }
-
-  .btn{
-    width:100%;
-    max-width:320px;
-    text-align:center;
-  }
-}
-    @media (max-width: 900px){
-  .brand-logo{
-    width: min(92vw, 360px);
-    height: auto;
-    display: block;
-    margin: 12px auto 8px;
-  }
-  header.hero{
-    height: auto;
-    min-height: auto;
-  }
-}
+    /* ===== Desktop: 2 columns hero ===== */
+    @media (min-width: 900px){
+      .hero-inner{
+        flex-direction:row;
+        align-items:center;
+        justify-content:space-between;
+        text-align:left;
+        gap:60px;
+        padding:40px 0;
+      }
+      .hero-text{ flex:1; }
+      .hero-photo{ flex:1; max-width:520px; }
+      .trust{ justify-content:flex-start; }
+      .cta{
+        flex-direction:row;
+        justify-content:flex-start;
+        align-items:center;
+        gap:12px;
+      }
+      .btn{ max-width:260px; }
+      .grid{
+        grid-template-columns:1fr 1fr;
+      }
+    }
   </style>
 </head>
 
