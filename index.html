@@ -72,7 +72,6 @@
     .wrap{max-width:var(--max);margin:0 auto;padding:0 18px;}
     header{background:var(--bg);}
     .hero{position:relative;}
-    /*
     .hero img{width:100%;max-height:620px;object-fit:cover;display:block;}
     .hero .badge{
       position:absolute;left:0;right:0;bottom:26px;
@@ -82,11 +81,8 @@
       color:#fff;border-radius:16px;
       box-shadow:0 6px 24px rgba(0,0,0,.12);
     }
-    */
-    /*
     .hero h1{margin:0;font-size:30px;letter-spacing:2px;}
     .hero p{margin:6px 0 0;font-size:14px;opacity:.95;}
-    */
     main{padding:22px 0 50px;}
     .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:16px;margin:14px 0;box-shadow:0 2px 12px rgba(0,0,0,.04);}
     h2{font-size:18px;margin:0 0 10px;}
@@ -204,253 +200,27 @@
   color:#444;
   line-height:1.6;
 }  
- .hero-title{
-  line-height:1.15;   /* 少しゆとり */
-}
-
-.hero-title .hero-line{
-  margin-top:16px;    /* サブラインを少し下げる */
-}
- .hero-title{
-  font-weight:600;
-}
- .btn.two-line .btn-sub{
-  font-size:11px;
-  opacity:.65;
-}
-  .hero-title{
-  font-weight:600;   /* 700→600に */
-  line-height:1.18;  /* 少しゆるめる */
-} 
-  .hero-title .hero-line{
-  margin-top:18px;
-}
- .btn.two-line .btn-sub{
-  opacity:.6;   /* 少し弱める */
-}
-  /* ===== Center Layout Test ===== */
-
-.hero{
-  text-align:center;
-}
-
-.hero-title{
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.hero-sub{
-  max-width: 600px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
-.trust{
-  justify-content:center;
-}
-
-.cta{
-  justify-content:center;
-}
- /* ===== Custom Hero Layout ===== */
-
-.custom-hero{
-  text-align:center;
-  line-height:1.1;
-}
-
-.custom-hero span{
-  display:block;
-}
-
-/* メイン強調 */
-.line1,
-.line3,
-.line5{
-  font-size: clamp(30px, 7vw, 48px);
-  font-weight:700;
-  color:#2f2f2f;
-}
-
-/* 小さく軽く */
-.line2,
-.line4{
-  font-size: clamp(16px, 4vw, 22px);
-  font-weight:500;
-  color:#666;
-  margin:8px 0;
-}
-
-/* Philippines 少し強め */
-.line5{
-  margin-top:8px;
-} 
- .line2{
-  font-style:italic;
-  opacity:.6;
-} 
- .line5{
-  letter-spacing:1px;
-}
-  .line2{
-  letter-spacing:2px;
-}
-  .hero-sub{
-  max-width:520px;
-  margin:0 auto;
-}  
-  /* ===== PC表示調整 ===== */
-@media (min-width: 900px){
-
-  .hero-inner{
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .hero-title{
-    font-size: 56px;
-    line-height: 1.2;
-  }
-
-  .hero-sub{
-    font-size: 18px;
-    max-width: 600px;
-    margin: 20px auto 30px;
-  }
-
-  .cta{
-    margin-top: 30px;
-  }
-
-  .btn{
-    font-size: 16px;
-    padding: 16px 34px;
-  }
-
-}
-  /* ===== PC 2カラム ===== */
-@media (min-width: 900px){
-
-  .hero-inner{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
-    max-width:1100px;
-    margin:0 auto;
-    padding:60px 20px;
-  }
-
-  .hero-text{
-    flex:1;
-    text-align:left;
-  }
-
-  .hero-image{
-    flex:1;
-    text-align:right;
-  }
-
-  .hero-image img{
-    max-width:100%;
-    border-radius:20px;
-  }
-
-}
-    .hero-image img{
-  box-shadow:0 20px 60px rgba(0,0,0,0.15);
-}
-    /* ===== hero layout (new) ===== */
-.hero-inner{
-  display:flex;
-  flex-direction:column;
-  gap:22px;
-  padding:28px 18px;
-  max-width:1100px;
-  margin:0 auto;
-}
-
-.hero-text{ text-align:center; }
-
-.hero-image img{
-  width:100%;
-  max-width:520px;
-  height:auto;
-  border-radius:18px;
-  display:block;
-  margin:0 auto;
-}
-
-.trust{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px 14px;
-  justify-content:center;
-  margin:14px 0 18px;
-}
-
-.cta{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-  align-items:center;
-  justify-content:center;
-}
-
-/* PCだけ2カラム */
-@media (min-width: 900px){
-  .hero-inner{
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
-    padding:60px 20px;
-  }
-  .hero-text{ flex:1; text-align:left; }
-  .trust{ justify-content:flex-start; }
-  .cta{ align-items:flex-start; }
-  .hero-image{ flex:1; text-align:right; }
-  .hero-image img{ margin:0; }
-}
   </style>
 </head>
 
 <body>
   <header class="hero">
+    <img class="brand-logo" src="logo.png" alt="Sisi Japan Finds"
   <div class="hero-inner">
-
-    <div class="hero-text">
-      <!-- ロゴ -->
-      <img class="brand-logo" src="logo.png" alt="Sisi Japan Finds">
-
-      <p class="brand-tagline">Authentic Japanese Finds & Essentials</p>
-
-      <h1 class="hero-title">
-        Japan Pasabuy<br>
-        <span class="and">and</span><br>
-        Proxy Service<br>
-        <span class="delivered">Delivered to the</span><br>
-        Philippines
-      </h1>
-
-      <p class="hero-sub">
-        Send a screenshot or link.
-        We check price + shipping and send you a clear quote.
-        Fast replies. Careful packing. Tracking available.
-      </p>
-
-      <div class="cta">
+    <div class="brand">
       
-      </div>
+      <p class="brand-tagline">Authentic Japanese Finds & Essentials</p>
     </div>
 
-    <div class="hero-image">
-      <img src="queen.jpg" alt="Queen">
-    </div>
+    <h1 class="hero-title">
+      Japan Pasabuy & Proxy Service<br>
+      Delivered to the Philippines
+    </h1>
 
-  </div>
-</header>
-    
+    <p class="hero-sub">
+      Send a screenshot or link — Sisi Japan Finds checks price + shipping and sends you a clear quote.
+      Fast replies, careful packing, tracking available.
+    </p>
 
     <div class="trust">
       <span>✅ Transparent fees</span>
@@ -460,7 +230,7 @@
 
     <div class="cta">
   <a class="btn primary neon-hover"
-     href="https://m.me/sisijapanfinds"
+     href="https://m.me/XXX"
      target="_blank"
      rel="noopener">
     Message Sisi Japan Finds
@@ -472,6 +242,20 @@
 </a>
 </div>
 
+
+<p class="note">Tip: Send screenshot + quantity + your city for the fastest quote.</p>
+
+</header>
+
+<header>
+  <div class="hero">
+    <!-- Queen photo: upload as queen.jpg -->
+    <img src="queen.jpg" alt="Queen">
+    <div class="badge wrap">
+      <h1>Sisi Japan Finds ❤️</h1>
+      <p>Authentic Japanese Goodies &amp; Essentials</p>
+    </div>
+  </div>
 </header>
 
     <div class="grid">
