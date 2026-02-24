@@ -188,6 +188,24 @@
         grid-template-columns:1fr 1fr;
       }
     }
+    .hero-photo{
+  width:100%;
+  max-width:420px;   /* ← 520 → 420に */
+  margin: 0 auto;
+}
+.hero-photo img{
+  width:100%;
+  height:auto;
+  border-radius:20px;
+  box-shadow:0 20px 60px rgba(0,0,0,.15);
+}
+   @media (max-width: 600px){
+  .hero-photo img{
+    max-height: 420px;   /* 好みで360〜480 */
+    object-fit: cover;
+  }
+}
+    
   </style>
 </head>
 
