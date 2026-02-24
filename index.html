@@ -323,19 +323,77 @@
     padding: 16px 34px;
   }
 
-}  
+}
+  /* ===== PC 2カラム ===== */
+@media (min-width: 900px){
+
+  .hero-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:60px;
+    max-width:1100px;
+    margin:0 auto;
+    padding:60px 20px;
+  }
+
+  .hero-text{
+    flex:1;
+    text-align:left;
+  }
+
+  .hero-image{
+    flex:1;
+    text-align:right;
+  }
+
+  .hero-image img{
+    max-width:100%;
+    border-radius:20px;
+  }
+
+}
+    .hero-image img{
+  box-shadow:0 20px 60px rgba(0,0,0,0.15);
+}
   </style>
 </head>
 
 <body>
   <header class="hero">
-    <img class="brand-logo" src="logo.png" alt="Sisi Japan Finds"
   <div class="hero-inner">
-    <div class="brand">
-      
+
+    <div class="hero-text">
+      <!-- ロゴ -->
+      <img class="brand-logo" src="logo.png" alt="Sisi Japan Finds">
+
       <p class="brand-tagline">Authentic Japanese Finds & Essentials</p>
+
+      <h1 class="hero-title">
+        Japan Pasabuy<br>
+        <span class="and">and</span><br>
+        Proxy Service<br>
+        <span class="delivered">Delivered to the</span><br>
+        Philippines
+      </h1>
+
+      <p class="hero-sub">
+        Send a screenshot or link.
+        We check price + shipping and send you a clear quote.
+        Fast replies. Careful packing. Tracking available.
+      </p>
+
+      <div class="cta">
+        ボタン2つ
+      </div>
     </div>
 
+    <div class="hero-image">
+      <img src="queen.jpg" alt="Queen">
+    </div>
+
+  </div>
+</header>
     <h1 class="hero-title custom-hero">
   <span class="line1">Japan Pasabuy</span>
   <span class="line2">and</span>
