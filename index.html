@@ -247,7 +247,44 @@
 
 .cta{
   justify-content:center;
-}  
+}
+ /* ===== Custom Hero Layout ===== */
+
+.custom-hero{
+  text-align:center;
+  line-height:1.1;
+}
+
+.custom-hero span{
+  display:block;
+}
+
+/* メイン強調 */
+.line1,
+.line3,
+.line5{
+  font-size: clamp(30px, 7vw, 48px);
+  font-weight:700;
+  color:#2f2f2f;
+}
+
+/* 小さく軽く */
+.line2,
+.line4{
+  font-size: clamp(16px, 4vw, 22px);
+  font-weight:500;
+  color:#666;
+  margin:8px 0;
+}
+
+/* Philippines 少し強め */
+.line5{
+  margin-top:8px;
+} 
+ .line2{
+  font-style:italic;
+  opacity:.6;
+}   
   </style>
 </head>
 
@@ -260,10 +297,13 @@
       <p class="brand-tagline">Authentic Japanese Finds & Essentials</p>
     </div>
 
-    <h1 class="hero-title">
-      Japan Pasabuy & Proxy Service<br>
-      Delivered to the Philippines
-    </h1>
+    <h1 class="hero-title custom-hero">
+  <span class="line1">Japan Pasabuy</span>
+  <span class="line2">and</span>
+  <span class="line3">Proxy Service</span>
+  <span class="line4">Delivered to the</span>
+  <span class="line5">Philippines</span>
+</h1>
 
     <p class="hero-sub">
       Send a screenshot or link — Sisi Japan Finds checks price + shipping and sends you a clear quote.
