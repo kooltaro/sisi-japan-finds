@@ -474,7 +474,7 @@
   /* ===== FIX: mobile page centered ===== */
 @media (max-width: 900px){
   body{
-    max-width: 520px;
+    max-width: none;
     margin: 0 auto;
   }
 
@@ -505,7 +505,19 @@
     max-width:320px;
     text-align:center;
   }
-}  
+}
+    @media (max-width: 900px){
+  .brand-logo{
+    width: min(92vw, 360px);
+    height: auto;
+    display: block;
+    margin: 12px auto 8px;
+  }
+  header.hero{
+    height: auto;
+    min-height: auto;
+  }
+}
   </style>
 </head>
 
