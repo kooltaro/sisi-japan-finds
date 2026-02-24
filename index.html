@@ -125,7 +125,16 @@
   border: 2px solid rgba(244,143,177,.55);
   color: #333;
 }
+/* ===== うっすら常時ネオン ===== */
 
+.btn.ghost.neon-hover::before{
+  opacity: .25;   /* ← 普段うっすら光る */
+}
+
+.btn.ghost.neon-hover:hover::before,
+.btn.ghost.neon-hover:active::before{
+  opacity: .85;   /* ← 触ると強く */
+}
 /* 右ボタンのホバー時、文字も少し白寄りに */
 .btn.ghost:hover{
   color:#fff;
