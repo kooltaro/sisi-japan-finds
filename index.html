@@ -199,6 +199,61 @@
       .hero-image{ margin-top:0; }
       .hero-image img{ margin:0; }
     }
+    /* ===== Queen photo pink badge (always show) ===== */
+.hero-image-wrapper{
+  position:relative;
+}
+
+.hero-image-wrapper img{
+  width:100%;
+  max-width:520px;
+  height:auto;
+  border-radius:18px;
+  display:block;
+  margin:0 auto;
+}
+
+/* pink band */
+.hero-badge{
+  position:absolute;
+  left:50%;
+  bottom:18px;
+  transform:translateX(-50%);
+  width:min(92%, 520px);
+  background:rgba(244,143,177,.85);
+  color:#fff;
+  padding:18px 22px;
+  border-radius:22px;
+  text-align:center;
+  box-shadow:0 10px 30px rgba(0,0,0,.18);
+  backdrop-filter: blur(6px);
+}
+
+.hero-badge .badge-title{
+  font-size:26px;
+  font-weight:800;
+  letter-spacing:1px;
+  margin:0;
+}
+
+.hero-badge .badge-sub{
+  font-size:14px;
+  opacity:.95;
+  margin-top:6px;
+}
+
+/* PCで写真が大きいときだけ、帯も少し大きく */
+@media (min-width: 900px){
+  .hero-badge{
+    bottom:22px;
+    padding:20px 26px;
+  }
+  .hero-badge .badge-title{ font-size:30px; }
+}
+  #shipping ul{ margin:8px 0 0; padding-left:20px; }
+#shipping li{ margin:6px 0; }
+#shipping .ship-block{ margin:12px 0; }
+#shipping hr{ border:none; border-top:1px solid #eee; margin:14px 0; }  
   </style>
 </head>
 
@@ -244,9 +299,13 @@
         <p class="note">Tip: Send screenshot + quantity + your city for the fastest quote.</p>
       </div>
 
-      <div class="hero-image">
-        <img src="queen.jpg" alt="Queen">
-      </div>
+      <div class="hero-image hero-image-wrapper">
+  <img src="queen.jpg" alt="Queen">
+  <div class="hero-badge">
+    <div class="badge-title">Sisi Japan Finds ❤️</div>
+    <div class="badge-sub">Authentic Japanese Goodies &amp; Essentials</div>
+  </div>
+</div>
     </div>
   </header>
 
@@ -275,60 +334,65 @@
       </div>
     </div>
 
-    <section class="card">
-      <h2>🇯🇵 Japan to Philippines 🇵🇭<br>Pasabuy Service</h2>
-      <p><b>📍 Shipping &amp; Handling Details</b></p>
+    <section class="card" id="shipping">
+  <h2>🇯🇵 Japan to Philippines 🇵🇭<br>📦 Pasabuy 📦</h2>
 
-      <p><b>🚢 Sea Cargo</b><br>
-        • ¥1,000 / kilo<br>
-        • Batch shipping (scheduled)<br>
-        • ETA: 3–4 weeks after dispatch
-      </p>
+  <p><b>📍 Shipping &amp; Service Details 📍</b></p>
 
-      <p><b>✈️ Air Cargo (EMS)</b><br>
-        • ¥3,150 / kilo<br>
-        • Available anytime<br>
-        • ETA: approx. 7–12 days
-      </p>
+  <div class="ship-block">
+    <p><b>🚢 SEA Cargo</b></p>
+    <ul>
+      <li><b>₱300 / kilo</b> (LUZON) — ETA: 3–4 weeks after dispatch</li>
+      <li><b>₱400 / kilo</b> (VISAYAS) — ETA: 4–6 weeks after dispatch</li>
+      <li>Batch shipping (scheduled)</li>
+    </ul>
+  </div>
 
-      <hr>
+  <div class="ship-block">
+    <p><b>✈️ AIR Cargo (EMS)</b></p>
+    <ul>
+      <li><b>₱1,500 / kilo</b> (LUZON)</li>
+      <li>Available anytime</li>
+      <li>ETA: approx. 7–12 days</li>
+    </ul>
+  </div>
 
-      <p><b>💼 Service Fee (Sliding Scale)</b></p>
-      <p>
-        • 25% – Standard rate<br>
-        • 20% – Orders over ¥100,000<br>
-        • 15% – Orders over ¥500,000<br>
-        • Minimum service fee: ¥2,000<br>
-        • High-value or special items may require a custom quotation
-      </p>
+  <hr>
 
-      <hr>
+  <p><b>💼 Service Fee (Sliding Scale)</b></p>
+  <ul>
+    <li>25% – Standard rate</li>
+    <li>20% – Orders over ¥100,000</li>
+    <li>15% – Orders over ¥500,000</li>
+    <li>High-value or special items may require a custom quotation</li>
+  </ul>
 
-      <p><b>📦 Important Notes</b></p>
-      <p>
-        • Shipping fee is based on actual weight after packing<br>
-        • All rates are in JPY<br>
-        • PHP conversion will be calculated at the time of payment<br>
-        • 100% advance payment is required before purchase
-      </p>
+  <hr>
 
-      <hr>
+  <p><b>📦 Important Notes</b></p>
+  <ul>
+    <li>Shipping fee is based on actual weight after packing.</li>
+    <li>All rates are in PHP</li>
+    <li>PHP conversion will be calculated at the time of payment.</li>
+    <li><b>100% advance payment</b> is required to proceed.</li>
+  </ul>
 
-      <p><b>💳 Payment Methods</b></p>
-      <p>
-        • Wise<br>
-        • PayPay<br>
-        • Japan Post Bank (JP Bank)<br>
-        • GCash (Philippines)
-      </p>
+  <hr>
 
-      <p class="note">
-        📌 Payment confirmation is required before purchase<br>
-        📌 Orders will be processed once full payment is received
-      </p>
+  <p><b>💳 Payment Methods</b></p>
+  <ul>
+    <li>Wise / Paypay</li>
+    <li>Japan Post Bank (JP Bank)</li>
+    <li>GCash (Philippines)</li>
+  </ul>
 
-      <p class="note"><b>Thank you, mga ka-Sisi! 🫶🏻</b></p>
-    </section>
+  <p class="note">
+    📌 Payment confirmation is required before purchase and shipping.<br>
+    📌 Orders will be processed once payment is fully received.
+  </p>
+
+  <p class="note"><b>Thank you mga ka Sisi!!! 🫶🏻</b></p>
+</section>
 
     <div class="card">
       <h2>Restricted / Not Allowed</h2>
