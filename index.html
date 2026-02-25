@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -69,15 +70,9 @@
   100%{ background-position: 0% 50%; }
 }
     body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial;line-height:1.6;background:#fafafa;color:var(--text);}
-    .wrap{
-  width:100%;
-  max-width:var(--max);
-  margin:0 auto;
-  padding:0 18px;
-}
+    .wrap{max-width:var(--max);margin:0 auto;padding:0 18px;}
     header{background:var(--bg);}
     .hero{position:relative;}
-    /*
     .hero img{width:100%;max-height:620px;object-fit:cover;display:block;}
     .hero .badge{
       position:absolute;left:0;right:0;bottom:26px;
@@ -87,22 +82,12 @@
       color:#fff;border-radius:16px;
       box-shadow:0 6px 24px rgba(0,0,0,.12);
     }
-    */
-    /*
     .hero h1{margin:0;font-size:30px;letter-spacing:2px;}
     .hero p{margin:6px 0 0;font-size:14px;opacity:.95;}
-    */
     main{padding:22px 0 50px;}
     .card{background:#fff;border:1px solid #eee;border-radius:16px;padding:16px;margin:14px 0;box-shadow:0 2px 12px rgba(0,0,0,.04);}
     h2{font-size:18px;margin:0 0 10px;}
-    .cta{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:10px;
-  justify-content:center;
-  align-items:center;
-}
+    .cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px;}
     .btn{display:inline-block;text-decoration:none;background:var(--pink2);color:#fff;padding:12px 14px;border-radius:12px;font-weight:700;}
     .btn.alt{background:#fff;color:var(--pink2);border:2px solid var(--pink2);}
     .grid{display:grid;gap:12px;grid-template-columns:1fr;}
@@ -304,259 +289,31 @@
  .line5{
   letter-spacing:1px;
 }
-  .line2{
-  letter-spacing:2px;
-}
-  .hero-sub{
-  max-width:520px;
-  margin:0 auto;
-}  
-  /* ===== PC表示調整 ===== */
-@media (min-width: 900px){
-
-  .hero-inner{
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  .hero-title{
-    font-size: 56px;
-    line-height: 1.2;
-  }
-
-  .hero-sub{
-    font-size: 18px;
-    max-width: 600px;
-    margin: 20px auto 30px;
-  }
-
-  .cta{
-    margin-top: 30px;
-  }
-
-  .btn{
-    font-size: 16px;
-    padding: 16px 34px;
-  }
-
-}
-  /* ===== PC 2カラム ===== */
-@media (min-width: 900px){
-
-  .hero-inner{
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
-    max-width:1100px;
-    margin:0 auto;
-    padding:60px 20px;
-  }
-
-  .hero-text{
-    flex:1;
-    text-align:left;
-  }
-
-  .hero-image{
-    flex:1;
-    text-align:right;
-  }
-
-  .hero-image img{
-    max-width:100%;
-    border-radius:20px;
-  }
-
-}
-    .hero-image img{
-  box-shadow:0 20px 60px rgba(0,0,0,0.15);
-}
-    /* ===== hero layout (new) ===== */
-.hero-inner{
-  display:flex;
-  flex-direction:column;
-  gap:22px;
-  padding:28px 18px;
-  max-width:1100px;
-  margin:0 auto;
-}
-
-.hero-text{ text-align:center; }
-
-.hero-image img{
-  width:100%;
-  max-width:520px;
-  height:auto;
-  border-radius:18px;
-  display:block;
-  margin:0 auto;
-}
-
-.trust{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px 14px;
-  justify-content:center;
-  margin:14px 0 18px;
-}
-
-.cta{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-  align-items:center;
-  justify-content:center;
-}
-
-/* PCだけ2カラム */
-@media (min-width: 900px){
-  .hero-inner{
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-between;
-    gap:60px;
-    padding:60px 20px;
-  }
-  .hero-text{ flex:1; text-align:left; }
-  .trust{ justify-content:flex-start; }
-  .cta{ align-items:flex-start; }
-  .hero-image{ flex:1; text-align:right; }
-  .hero-image img{ margin:0; }
-}
-    .cta{
-  display:flex;
-  gap:10px;
-  flex-wrap:wrap;
-  margin-top:10px;
-  justify-content:center;
-  align-items:center;
-}
-
-.btn{
-  display:inline-block;
-  text-decoration:none;
-  background:var(--pink2);
-  color:#fff;
-  padding:12px 14px;
-  border-radius:12px;
-  font-weight:700;
-  min-width:240px;
-  text-align:center;
-}
-
-.btn.alt{
-  background:#fff;
-  color:var(--pink2);
-  border:2px solid var(--pink2);
-}
-  /* ===== Mobile default (1 column, centered) ===== */
-.hero-inner{
-  max-width: 520px;
-  margin: 0 auto;
-  padding: 40px 20px;
-}
-
-.cta{
-  display:flex;
-  flex-direction:column;
-  gap:12px;
-  align-items:center;
-  justify-content:center;
-  margin-top:16px;
-}
-
-.btn{
-  width:100%;
-  max-width:320px;
-  text-align:center;
-} 
-  /* ===== FIX: mobile page centered ===== */
-@media (max-width: 900px){
-  body{
-    max-width: none;
-    margin: 0 auto;
-  }
-
-  header.hero, main, .grid, .card{
-    width: 100%;
-  }
-
-  .hero-inner{
-    margin: 0 auto;
-    padding: 40px 20px;
-  }
-
-  .hero-text{
-    text-align: center;
-  }
-
-  .cta{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-    align-items:center;
-    justify-content:center;
-    margin-top:16px;
-  }
-
-  .btn{
-    width:100%;
-    max-width:320px;
-    text-align:center;
-  }
-}
-    @media (max-width: 900px){
-  .brand-logo{
-    width: min(92vw, 360px);
-    height: auto;
-    display: block;
-    margin: 12px auto 8px;
-  }
-  header.hero{
-    height: auto;
-    min-height: auto;
-  }
-}
+    
   </style>
 </head>
 
 <body>
   <header class="hero">
+    <img class="brand-logo" src="logo.png" alt="Sisi Japan Finds"
   <div class="hero-inner">
-
-    <div class="hero-text">
-      <!-- ロゴ -->
-      <img class="brand-logo" src="logo.png" alt="Sisi Japan Finds">
-
-      <p class="brand-tagline">Authentic Japanese Finds & Essentials</p>
-
-      <h1 class="hero-title">
-        Japan Pasabuy<br>
-        <span class="and">and</span><br>
-        Proxy Service<br>
-        <span class="delivered">Delivered to the</span><br>
-        Philippines
-      </h1>
-
-      <p class="hero-sub">
-        Send a screenshot or link.
-        We check price + shipping and send you a clear quote.
-        Fast replies. Careful packing. Tracking available.
-      </p>
-
-      <div class="cta">
+    <div class="brand">
       
-      </div>
+      <p class="brand-tagline">Authentic Japanese Finds & Essentials</p>
     </div>
 
-    <div class="hero-image">
-      <img src="queen.jpg" alt="Queen">
-    </div>
+    <h1 class="hero-title custom-hero">
+  <span class="line1">Japan Pasabuy</span>
+  <span class="line2">and</span>
+  <span class="line3">Proxy Service</span>
+  <span class="line4">Delivered to the</span>
+  <span class="line5">Philippines</span>
+</h1>
 
-  </div>
-</header>
-    
+    <p class="hero-sub">
+      Send a screenshot or link — Sisi Japan Finds checks price + shipping and sends you a clear quote.
+      Fast replies, careful packing, tracking available.
+    </p>
 
     <div class="trust">
       <span>✅ Transparent fees</span>
@@ -566,7 +323,7 @@
 
     <div class="cta">
   <a class="btn primary neon-hover"
-     href="https://m.me/sisijapanfinds"
+     href="https://m.me/XXX"
      target="_blank"
      rel="noopener">
     Message Sisi Japan Finds
@@ -578,6 +335,20 @@
 </a>
 </div>
 
+
+<p class="note">Tip: Send screenshot + quantity + your city for the fastest quote.</p>
+
+</header>
+
+<header>
+  <div class="hero">
+    <!-- Queen photo: upload as queen.jpg -->
+    <img src="queen.jpg" alt="Queen">
+    <div class="badge wrap">
+      <h1>Sisi Japan Finds ❤️</h1>
+      <p>Authentic Japanese Goodies &amp; Essentials</p>
+    </div>
+  </div>
 </header>
 
     <div class="grid">
@@ -694,4 +465,3 @@ Budget (optional):
 
 </body>
 </html>
-
