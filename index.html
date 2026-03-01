@@ -123,28 +123,25 @@
     }
 
     /* Neon hover (optional) */
-    .neon-hover::before{
-      content:"";
-      position:absolute;
-      inset:-6px;
-      border-radius:36px;
-      background:linear-gradient(45deg,#ff2d95,#ff6ec7,#ff9edb,#ff2d95);
-      background-size:300%;
-      filter:blur(12px);
-      z-index:-1;
-      opacity:0;
-      transition:opacity .3s;
-      animation:neonPink 6s linear infinite;
-    }
-    .neon-hover:hover::before,
-    .neon-hover:active::before{ opacity:.85; }
-    @keyframes neonPink{
-      0%{ background-position:0% 50%; }
-      50%{ background-position:100% 50%; }
-      100%{ background-position:0% 50%; }
-    }
+   .neon-hover::before{
+  content:"";
+  position:absolute;
+  inset:-6px;
+  border-radius:36px;
+  background:linear-gradient(45deg,#ff2d95,#ff6ec7,#ff9edb,#ff2d95);
+  background-size:300%;
+  filter:blur(14px);
+  z-index:-1;
 
-    .note{ font-size:12px; color:#666; margin:12px 0 0; }
+  opacity:.35;   /* ← 通常時うっすら光る */
+  transition:opacity .3s;
+  animation:neonPink 6s linear infinite;
+}
+
+.neon-hover:hover::before,
+.neon-hover:active::before{
+  opacity:.85;   /* ← 押すと強く */
+}
 
     /* Queen image */
     .hero-image{ margin-top:16px; }
