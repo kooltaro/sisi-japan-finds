@@ -142,6 +142,15 @@
 .neon-hover:active::before{
   opacity:.85;   /* ← 押すと強く */
 }
+    /* Primary button：ネオン見えるように少し透かす */
+.btn.primary{
+  background: rgba(255,111,174,.88);
+  box-shadow: 0 10px 28px rgba(255,111,174,.45);
+}
+    .neon-hover{
+  position: relative;
+  z-index: 1;
+}
 
     /* Queen image */
     .hero-image{ margin-top:16px; }
